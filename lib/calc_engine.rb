@@ -1,15 +1,6 @@
 class CalcEngine
 
   def run_calculator
-    # puts "------------"
-    # puts "Running Calc -  Adding numbers"
-    # puts add(2,4)
-    # puts "------------"
-    # puts "What is you name?"
-    # user_input = gets.chomp
-    # puts "Your name is #{user_input}"
-    # puts "Add code here to finish calculator"
-    # puts "------------"
     #Ask the user what they want to select
     print "What would you like to use(type the acronym): Basic calculator(B), Basic Long calculator(BL), Advanced calculator(A), BMI calculator(BMI) or Trip calculator(T)"
     #Take in user input and find option they are interested in
