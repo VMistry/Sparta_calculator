@@ -1,15 +1,6 @@
 class CalcEngine
 
   def run_calculator
-    # puts "------------"
-    # puts "Running Calc -  Adding numbers"
-    # puts add(2,4)
-    # puts "------------"
-    # puts "What is you name?"
-    # user_input = gets.chomp
-    # puts "Your name is #{user_input}"
-    # puts "Add code here to finish calculator"
-    # puts "------------"
     #Ask the user what they want to select
     print "What would you like to use(type the acronym): Basic calculator(B), Basic Long calculator(BL), Advanced calculator(A), BMI calculator(BMI) or Trip calculator(T)"
     #Take in user input and find option they are interested in
@@ -94,6 +85,7 @@ class CalcEngine
   def basic
     #Ask the user to type on 2 numbers and a operation.
     print "Enter first number: "
+    #take in user input
     number1 = gets.chomp.to_f
     print "Enter operator number: "
     operator = gets.chomp
@@ -107,7 +99,9 @@ class CalcEngine
 
   #Basic long calculator
   def basic_long
+    #Ask the user to type on 2 numbers and a operation.
     print "Enter first number: "
+    #Take in user input
     number1 = gets.chomp.to_f
     operator = ""
     number2 = 0.0
@@ -128,7 +122,7 @@ class CalcEngine
     #rerun main function
     run_calculator
   end
-
+  #Allow the user to use power or square root numbers.
   def advanced
     print "Which function would you like to us? Square Root(sr) or Power(p): "
     answer = gets.chomp.downcase
@@ -158,7 +152,7 @@ class CalcEngine
     result = ((weight * 703) / height) / height
     return result
   end
-
+  #This calculates the BMI calculations
   def bmi
     print "Would you like to use Imperial(i) or Metric measurements(m)?"
     answer = gets.chomp;
@@ -178,7 +172,7 @@ class CalcEngine
     end
     run_calculator
   end
-
+  #This calculates the cost of the trip and how long the trip will be
   def trip_calculator(distance, fuel_consumption, cost, speed)
     result1 = distance/1000
     result1 = result1 * fuel_consumption;
