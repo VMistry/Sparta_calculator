@@ -122,7 +122,7 @@ class CalcEngine
     #rerun main function
     run_calculator
   end
-
+  #Allow the user to use power or square root numbers.
   def advanced
     print "Which function would you like to us? Square Root(sr) or Power(p): "
     answer = gets.chomp.downcase
@@ -152,7 +152,7 @@ class CalcEngine
     result = ((weight * 703) / height) / height
     return result
   end
-
+  #This calculates the BMI calculations
   def bmi
     print "Would you like to use Imperial(i) or Metric measurements(m)?"
     answer = gets.chomp;
@@ -172,7 +172,7 @@ class CalcEngine
     end
     run_calculator
   end
-
+  #This calculates the cost of the trip and how long the trip will be
   def trip_calculator(distance, fuel_consumption, cost, speed)
     result1 = distance/1000
     result1 = result1 * fuel_consumption;
