@@ -94,6 +94,7 @@ class CalcEngine
   def basic
     #Ask the user to type on 2 numbers and a operation.
     print "Enter first number: "
+    #take in user input
     number1 = gets.chomp.to_f
     print "Enter operator number: "
     operator = gets.chomp
@@ -107,7 +108,9 @@ class CalcEngine
 
   #Basic long calculator
   def basic_long
+    #Ask the user to type on 2 numbers and a operation.
     print "Enter first number: "
+    #Take in user input
     number1 = gets.chomp.to_f
     operator = ""
     number2 = 0.0
